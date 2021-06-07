@@ -1,0 +1,18 @@
+.icon.is-right > .fa-check,
+.icon.is-right > .fa-exclamation-triangle {
+  display: none;
+}
+
+input:valid ~ .icon.is-right > .fa-check {
+  display: inline;
+  color: hsl(141, 71%, 48%);
+}
+
+input:invalid ~ .icon.is-right > .fa-exclamation-triangle {
+  display: inline;
+  color: hsl(48, 100%, 67%);
+}
+
+input:placeholder-shown ~ .icon.is-right > .fa-exclamation-triangle {
+  display: none;
+}
